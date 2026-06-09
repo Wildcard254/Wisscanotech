@@ -1,0 +1,14 @@
+name = "wisscano-worker"
+main = "worker/index.js"
+compatibility_date = "2026-06-09"
+account_id = "93c50d45b30845da0f60c919bfd42687"
+type = "javascript"
+
+# Optional: to publish the worker to a route in your zone, fill in the zone_id
+# and route below and then run `wrangler publish`.
+# zone_id = "<YOUR_ZONE_ID>"
+# route = "wisscano.co.ke/api/*"
+
+# You can set a PAGES origin host here or via Dashboard/vars.
+[vars]
+PAGES_ORIGIN = "<your-pages-project>.pages.dev"
