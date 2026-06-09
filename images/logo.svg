@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- White Circle Background -->
+  <circle cx="500" cy="500" r="480" fill="white" stroke="none"/>
+  
+  <!-- Left Circular Arc (Dark Navy) -->
+  <path d="M 200 500 A 300 300 0 0 1 350 250" stroke="#001a4d" stroke-width="60" fill="none" stroke-linecap="round"/>
+  
+  <!-- Right Circular Arc (Blue) -->
+  <path d="M 700 250 A 300 300 0 0 1 800 500" stroke="#0052cc" stroke-width="60" fill="none" stroke-linecap="round"/>
+  
+  <!-- Bottom Circular Arc (Dark Navy) -->
+  <path d="M 350 750 A 300 300 0 0 1 500 800" stroke="#001a4d" stroke-width="60" fill="none" stroke-linecap="round"/>
+  
+  <!-- Left Pixels/Dots (Blue and Dark Navy) -->
+  <rect x="80" y="420" width="50" height="50" fill="#0052cc"/>
+  <rect x="80" y="520" width="50" height="50" fill="#001a4d"/>
+  <rect x="150" y="380" width="50" height="50" fill="#0052cc"/>
+  <rect x="150" y="480" width="50" height="50" fill="#001a4d"/>
+  <rect x="150" y="580" width="50" height="50" fill="#0052cc"/>
+  <rect x="220" y="430" width="50" height="50" fill="#001a4d"/>
+  <rect x="220" y="530" width="50" height="50" fill="#0052cc"/>
+  
+  <!-- Main W Letter (Dark Navy) -->
+  <path d="M 300 350 L 350 700 L 420 500 L 490 700 L 540 350 M 560 350 L 610 700 L 680 500 L 750 700 L 800 350" 
+        stroke="#001a4d" stroke-width="80" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Arrow/Chevron Shape on Right (Blue) -->
+  <path d="M 780 300 L 850 370 L 830 400" stroke="#0052cc" stroke-width="40" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 900 350 L 950 400 L 930 430" stroke="#0052cc" stroke-width="40" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Circuit Board Lines (Right side) -->
+  <g stroke="#001a4d" stroke-width="30" fill="none" stroke-linecap="round">
+    <path d="M 820 450 L 900 450 L 920 430"/>
+    <path d="M 820 550 L 900 550 L 920 530"/>
+    <path d="M 820 650 L 900 650 L 920 630"/>
+  </g>
+  
+  <!-- Circuit Dots (Right side) -->
+  <circle cx="920" cy="430" r="20" fill="none" stroke="#001a4d" stroke-width="20"/>
+  <circle cx="920" cy="530" r="20" fill="none" stroke="#001a4d" stroke-width="20"/>
+  <circle cx="920" cy="630" r="20" fill="none" stroke="#001a4d" stroke-width="20"/>
+</svg>
