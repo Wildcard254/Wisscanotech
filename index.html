@@ -1,465 +1,100 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WISSCANO TECHNOLOGIES | Premium IT Solutions & Digital Licenses</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            dark: '#0f172a',    /* Slate 900 */
-                            card: '#1e293b',    /* Slate 800 */
-                            accent: '#06b6d4',  /* Cyan 500 */
-                            glow: '#0ea5e9'     /* Sky 500 */
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-      /* Ensure header content is visible below fixed nav on small screens */
-      @media (max-width: 768px) {
-        header { padding-top: 5.5rem; }
-      }
+<!-- ICT Hardware & Accessories Section -->
+<section id="hardware" class="mb-16">
+  <div class="flex items-center gap-3 mb-8 border-b border-slate-800 pb-3">
+    <i class="fa-solid fa-box-open text-brand-accent text-xl"></i>
+    <h3 class="text-xl md:text-2xl font-bold text-white">ICT Hardware & Accessories</h3>
+  </div>
 
-      /* Reduce the glow element on very small devices to avoid overflow */
-      @media (max-width: 420px) {
-        .hero-glow { width: 300px; height: 300px; filter: blur(80px); }
-      }
-    </style>
-</head>
-<body class="bg-brand-dark text-slate-100 font-sans antialiased">
-
-    <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-slate-800 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <div class="flex items-center gap-2">
-                    <div class="p-2 bg-brand-accent/10 rounded-lg border border-brand-accent/30">
-                        <i class="fa-solid fa-microchip text-brand-accent text-xl animate-pulse"></i>
-                    </div>
-                    <span class="text-xl font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">
-                        WISSCANO<span class="text-brand-accent"> TECHNOLOGIES</span>
-                    </span>
-                </div>
-                
-                <!-- Desktop Nav Links (hidden on small screens) -->
-                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                    <a href="#catalog" class="hover:text-brand-accent transition-colors">Digital Store</a>
-                    <a href="#services" class="hover:text-brand-accent transition-colors">Technical Services</a>
-                    <a href="#about" class="hover:text-brand-accent transition-colors">About Us</a>
-                </div>
-
-                <!-- Live Support Button -->
-                <div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20need%20urgent%20technical%20assistance." 
-                       target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-500 to-amber-600 hover:from-red-600 hover:to-amber-700 text-white font-semibold text-sm rounded-lg shadow-md">
-                        <i class="fa-solid fa-headset"></i>
-                        <span>Urgent Support</span>
-                    </a>
-                </div>
-            </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Router -->
+    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <i class="fa-solid fa-wifi text-3xl text-sky-400"></i>
+          <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Networking</span>
         </div>
-    </nav>
+        <h4 class="text-lg font-bold text-white mb-2">Router (Enterprise / SOHO)</h4>
+        <p class="text-slate-400 text-sm mb-4">High-performance routers for office and home networks — supports VPN, VLAN, and QoS.</p>
+      </div>
+      <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES%2C%20I%27d%20like%20a%20quote%20for%20Router%20(Enterprise%20%2F%20SOHO)%20%28Quantity%3A%201%29" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block w-full text-center px-4 py-2 rounded-lg bg-brand-accent text-slate-950 font-semibold hover:from-cyan-500">
+        Get Price / Place Order
+      </a>
+    </div>
 
-    <!-- HERO SECTION -->
-    <header class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-slate-950 via-brand-dark to-brand-dark">
-        <!-- Abstract Glow Background -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 hero-glow w-[500px] h-[500px] bg-brand-accent/10 rounded-full blur-[120px] pointer-events-none"></div>
-        
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold tracking-wider text-brand-accent bg-brand-accent/10 rounded-full border border-brand-accent/20 mb-6 uppercase">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span class="ml-2">Secured & Optimized by Cloudflare</span>
-            </span>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
-                All-In-One Enterprise IT Solutions & <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-glow">Digital Licenses</span>
-            </h1>
-            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-                Premium software deployment, automated server activation credits, professional smartphone engineering, and enterprise network setups. Speed, reliability, and precision execution.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="#catalog" class="w-full sm:w-auto px-8 py-4 bg-brand-accent hover:bg-cyan-600 text-slate-950 font-bold text-base rounded-xl transition-all shadow-lg shadow-brand-accent/20 text-center">
-                    Browse Digital Store
-                </a>
-                <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20would%20like%20to%20request%20a%20custom%20quote%20for%20your%20IT%20services." 
-                   target="_blank" rel="noopener noreferrer"
-                   class="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold text-base rounded-xl border border-slate-700 transition-all text-center inline-flex items-center gap-3">
-                    <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
-                    <span>Custom Quote</span>
-                </a>
-            </div>
+    <!-- Switch -->
+    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <i class="fa-solid fa-network-wired text-3xl text-emerald-400"></i>
+          <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Networking</span>
         </div>
-    </header>
+        <h4 class="text-lg font-bold text-white mb-2">Managed Switches</h4>
+        <p class="text-slate-400 text-sm mb-4">Layer 2/3 switches with PoE options for IP cameras, phones, and access points.</p>
+      </div>
+      <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES%2C%20I%27d%20like%20a%20quote%20for%20Managed%20Switches%20%28Quantity%3A%201%29" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block w-full text-center px-4 py-2 rounded-lg bg-brand-accent text-slate-950 font-semibold hover:from-cyan-500">
+        Get Price / Place Order
+      </a>
+    </div>
 
-    <!-- MAIN DIGITAL CATALOG -->
-    <main id="catalog" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Digital Products Marketplace</h2>
-            <p class="text-slate-400 max-w-2xl mx-auto">Instant procurement via secure automated chat verification. Select a product to initiate direct order fulfillments.</p>
+    <!-- WiFi Access Point -->
+    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <i class="fa-solid fa-wifi text-3xl text-indigo-400"></i>
+          <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Wireless</span>
         </div>
+        <h4 class="text-lg font-bold text-white mb-2">Wireless Access Points</h4>
+        <p class="text-slate-400 text-sm mb-4">Indoor/outdoor APs supporting 802.11ac/ax for scalable wireless coverage.</p>
+      </div>
+      <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES%2C%20I%27d%20like%20a%20quote%20for%20Wireless%20Access%20Points%20%28Quantity%3A%201%29" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block w-full text-center px-4 py-2 rounded-lg bg-brand-accent text-slate-950 font-semibold hover:from-cyan-500">
+        Get Price / Place Order
+      </a>
+    </div>
 
-        <!-- CATEGORY A: SOFTWARE & SSL -->
-        <section class="mb-16">
-            <div class="flex items-center gap-3 mb-8 border-b border-slate-800 pb-3">
-                <i class="fa-solid fa-compact-disc text-brand-accent text-xl"></i>
-                <h3 class="text-xl md:text-2xl font-bold text-white">Premium Software & Security Licenses</h3>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Microsoft Card -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-brands fa-windows text-3xl text-sky-400"></i>
-                            <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Instant Setup</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Microsoft Ecosystem</h4>
-                        <p class="text-slate-400 text-sm mb-4">Windows 10/11 Professional keys, Office Pro Plus packages, and comprehensive server OS licensing solutions.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20am%20inquiring%20about%20a%20Microsoft%20product%20license%20configuration." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Get Price / Place Order
-                    </a>
-                </div>
-
-                <!-- Google Workspace Card -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-brands fa-google text-3xl text-emerald-400"></i>
-                            <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Verified</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Google Workspace</h4>
-                        <p class="text-slate-400 text-sm mb-4">Professional business emails setup, custom domains integration, cloud storage expansion and administrative controls.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20am%20inquiring%20about%20Google%20Workspace%20setup%20and%20licenses." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Get Price / Place Order
-                    </a>
-                </div>
-
-                <!-- Adobe Suite Card -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-solid fa-wand-magic-sparkles text-3xl text-purple-400"></i>
-                            <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Genuine Only</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Adobe Creative Cloud</h4>
-                        <p class="text-slate-400 text-sm mb-4">Photoshop, Illustrator, Premiere Pro, and Acrobat DC complete business activation configurations.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20want%20to%20get%20a%20quote%20for%20Adobe%20Creative%20Cloud%20licenses." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Get Price / Place Order
-                    </a>
-                </div>
-
-                <!-- Antivirus & Security -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-solid fa-shield-virus text-3xl text-red-400"></i>
-                            <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Malware Protection</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Kaspersky & Global Endpoint Security</h4>
-                        <p class="text-slate-400 text-sm mb-4">Kaspersky Internet Security, ESET NOD32, and total endpoint protection suite licenses for corporate networks.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20am%20looking%20to%20purchase%20Antivirus%20/%20Kaspersky%20licenses." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Get Price / Place Order
-                    </a>
-                </div>
-
-                <!-- Premium SSL Certificates -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-solid fa-lock text-3xl text-brand-accent"></i>
-                            <span class="text-xs text-amber-400 font-mono bg-amber-500/10 px-2 py-1 rounded">HTTPS Security</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Premium SSL Certificates</h4>
-                        <p class="text-slate-400 text-sm mb-4">Domain Validated (DV), Organization Validated (OV), and Wildcard SSL structures to shield domain endpoints.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20am%20looking%20to%20secure%20my%20website%20with%20a%20premium%20SSL%20Certificate." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Get Price / Place Order
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- CATEGORY B: GSM & UNLOCKING TOOL CREDITS -->
-        <section class="mb-16">
-            <div class="flex items-center gap-3 mb-8 border-b border-slate-800 pb-3">
-                <i class="fa-solid fa-unlock-keyhole text-brand-accent text-xl"></i>
-                <h3 class="text-xl md:text-2xl font-bold text-white">GSM & Smartphone Unlocking Tool Credits</h3>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- TSM Unlock Tool Credits -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xl font-black text-brand-accent tracking-tighter">TSM TOOL</span>
-                            <span class="text-xs text-cyan-400 font-mono bg-cyan-500/10 px-2 py-1 rounded">Server API</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">TSM Tool Server Credits</h4>
-                        <p class="text-slate-400 text-sm mb-4">Turbo Service Mobile activation tokens, direct credit top-ups, and structural remote engine authentication logs.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20want%20to%20purchase%20tool%20credits/tokens%20for%20smartphone%20software%20operations." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Purchase Tool Credits
-                    </a>
-                </div>
-
-                <!-- Chimera Tool Card -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xl font-black text-amber-500 tracking-tighter">CHIMERA</span>
-                            <span class="text-xs text-amber-400 font-mono bg-amber-500/10 px-2 py-1 rounded">Activations</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Chimera Tool Licenses</h4>
-                        <p class="text-slate-400 text-sm mb-4">Official Chimera Pro activations, digital renewals, and instant device flashing framework authentication tokens.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20want%20to%20purchase%20tool%20credits/tokens%20for%20smartphone%20software%20operations." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Purchase Tool Credits
-                    </a>
-                </div>
-
-                <!-- UnlockTool Card -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xl font-black text-rose-500 tracking-tighter">UNLOCKTOOL</span>
-                            <span class="text-xs text-rose-400 font-mono bg-rose-500/10 px-2 py-1 rounded">GSM Global</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">UnlockTool Server Packages</h4>
-                        <p class="text-slate-400 text-sm mb-4">3, 6, and 12-month digital license extensions for comprehensive MediaTek, Qualcomm, and Apple software repairs.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20want%20to%20purchase%20tool%20credits/tokens%20for%20smartphone%20software%20operations." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Purchase Tool Credits
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- CATEGORY C: WEB INFRASTRUCTURE -->
-        <section class="mb-16">
-            <div class="flex items-center gap-3 mb-8 border-b border-slate-800 pb-3">
-                <i class="fa-solid fa-server text-brand-accent text-xl"></i>
-                <h3 class="text-xl md:text-2xl font-bold text-white">Web Infrastructure & Hosting Solutions</h3>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Web Hosting Packages -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-solid fa-cloud text-3xl text-blue-400"></i>
-                            <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">NVMe Storage</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Web Hosting Packages</h4>
-                        <p class="text-slate-400 text-sm mb-4">High-speed, optimized SSD infrastructure packages explicitly optimized to power WordPress & WooCommerce setups.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20would%20like%20to%20get%20more%20information%20on%20your%20Web%20Hosting%20and%20VPS%20packages." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Get Packages / Details
-                    </a>
-                </div>
-
-                <!-- VPS Card -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-solid fa-terminal text-3xl text-teal-400"></i>
-                            <span class="text-xs text-cyan-400 font-mono bg-cyan-500/10 px-2 py-1 rounded">Root Access</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Virtual Private Servers (VPS)</h4>
-                        <p class="text-slate-400 text-sm mb-4">Dedicated cloud computing allocations configured with dedicated IPv4 addressing for core backend deployments.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20would%20like%20to%20get%20more%20information%20on%20your%20Web%20Hosting%20and%20VPS%20packages." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Configure Your VPS
-                    </a>
-                </div>
-
-                <!-- Domain Reselling -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-solid fa-globe text-3xl text-indigo-400"></i>
-                            <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Instant Registry</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Domain Registration & Reselling</h4>
-                        <p class="text-slate-400 text-sm mb-4">Procure corporate .KE, .COM, or niche domain structures bundled with complete Cloudflare nameserver mapping hooks.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20am%20interested%20in%20your%20Domain%20Registration%20and%20Reselling%20services." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Inquire Registry Pricing
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- CATEGORY D: NETWORK & SECURITY -->
-        <section class="mb-8">
-            <div class="flex items-center gap-3 mb-8 border-b border-slate-800 pb-3">
-                <i class="fa-solid fa-network-wired text-brand-accent text-xl"></i>
-                <h3 class="text-xl md:text-2xl font-bold text-white">Network & CCTV Security Solutions</h3>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <!-- Cisco Systems -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-solid fa-route text-3xl text-sky-400"></i>
-                            <span class="text-xs text-sky-400 font-mono bg-sky-500/10 px-2 py-1 rounded">Enterprise Core</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Cisco Network Infrastructures</h4>
-                        <p class="text-slate-400 text-sm mb-4">Managed switch routing configurations, VLAN architectural planning, structural firewall policies, and secure corporate gateway hands[...]
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20need%20a%20quote%20for%20Cisco%20networking%20and%20infrastructure%20solutions." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Request System Architecture
-                    </a>
-                </div>
-
-                <!-- Hikvision CCTV -->
-                <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <i class="fa-solid fa-video text-3xl text-amber-400"></i>
-                            <span class="text-xs text-amber-400 font-mono bg-amber-500/10 px-2 py-1 rounded">Surveillance</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Hikvision Surveillance Systems</h4>
-                        <p class="text-slate-400 text-sm mb-4">High-definition IP network camera mapping, NVR/DVR installation matrices, and automated configuration for remote monitoring via smartphone apps.</p>
-                    </div>
-                    <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20am%20inquiring%20about%20Hikvision%20CCTV%20and%20surveillance%20installation." target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-brand-accent hover:underline">
-                        Get Surveillance Layout Quote
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- CORE TECHNICAL SERVICES SECTION -->
-    <section id="services" class="py-16 bg-slate-950 border-t border-b border-slate-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Core Technical Engineering Services</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">Expert laboratory-grade repairs, recovery configurations, and structural asset lifecycle management.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Service 1: Smartphone Software -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-slate-800 flex gap-4">
-                    <div class="text-brand-accent text-2xl mt-1">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-white mb-2">Smartphone Software Engineering</h4>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Advanced system restorations, stock or custom firmware flashing via secure internal tools, official network carrier unlocking, and software repair workflows.</p>
-                        <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20need%20expert%20assistance%20with%20Smartphone%20Software%20Services%20(Flashing/Unlocking)." target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-semibold text-brand-accent hover:underline">
-                            Book Software Repair <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Service 2: Hardware Repairs -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-slate-800 flex gap-4">
-                    <div class="text-brand-accent text-2xl mt-1">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-white mb-2">PC & Smartphone Hardware Repairs</h4>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Component-level board troubleshooting, IC replacement matrices, liquid damage restoration, premium panel/screen replacements, and warranty-safe repairs.</p>
-                        <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20have%20a%20PC%20or%20Smartphone%20hardware%20repair%20request." target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-semibold text-brand-accent hover:underline">
-                            Book Physical Repair <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Service 3: Data Recovery -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-slate-800 bg-gradient-to-br from-brand-dark via-brand-dark to-cyan-950/20 flex gap-4 ring-1 ring-brand-accent/20">
-                    <div class="text-brand-accent text-2xl mt-1">
-                        <i class="fa-solid fa-database text-cyan-400"></i>
-                    </div>
-                    <div>
-                        <div class="flex items-center gap-2 mb-2">
-                            <h4 class="text-xl font-bold text-white">Data Recovery & Redundant Backup</h4>
-                            <span class="text-xs bg-red-500/10 text-red-400 border border-red-500/20 px-2 py-0.5 rounded font-bold uppercase animate-pulse">Lost Data?</span>
-                        </div>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Deep partition sector reconstructions, recovery from bricked file allocations, logical or physical media storage restorations, and forensic-grade recovery workflows.</p>
-                        <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20need%20urgent%20assistance%20with%20Data%20Recovery%20services." target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-semibold text-brand-accent hover:underline">
-                            Emergency Data Recovery <i class="fa-solid fa-triangle-exclamation text-xs ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Service 4: Enterprise Hardware Resale -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-slate-800 flex gap-4">
-                    <div class="text-brand-accent text-2xl mt-1">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-white mb-2">Enterprise Hardware Provisioning</h4>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Refurbishing and specialized scaling upgrades for professional computing architecture: high-availability rack servers, heat-optimized storage arrays, and certified enterprise deployments.</p>
-                        <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES,%20I%20am%20inquiring%20about%20your%20Refurbished%20Enterprise%20Hardware%20(Servers/Printers)." target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-semibold text-brand-accent hover:underline">
-                            Inquire Available Stock <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!-- Keyboard -->
+    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <i class="fa-solid fa-keyboard text-3xl text-rose-400"></i>
+          <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Peripherals</span>
         </div>
-    </section>
+        <h4 class="text-lg font-bold text-white mb-2">Keyboards & Mice</h4>
+        <p class="text-slate-400 text-sm mb-4">Mechanical and membrane keyboards, and ergonomic mice for office setups.</p>
+      </div>
+      <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES%2C%20I%27d%20like%20a%20quote%20for%20Keyboards%20%26%20Mice%20%28Quantity%3A%201%29" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block w-full text-center px-4 py-2 rounded-lg bg-brand-accent text-slate-950 font-semibold hover:from-cyan-500">
+        Get Price / Place Order
+      </a>
+    </div>
 
-    <!-- TRUST INFRASTRUCTURE/ABOUT BRAG -->
-    <section id="about" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="bg-gradient-to-r from-brand-card to-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-            <div class="absolute -bottom-10 -right-10 text-slate-800/10 text-9xl font-black pointer-events-none select-none">WISSCANO</div>
-            <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-4">Why Procure From WISSCANO TECHNOLOGIES?</h3>
-            <p class="text-slate-400 text-sm md:text-base leading-relaxed max-w-3xl mx-auto mb-8">
-                We bridge the gap between high-end digital automation and raw technical engineering execution. Every license key is verified for integrity before deployment, and all workshop engineering processes are audited for compliance.
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                <div class="p-4 bg-brand-dark/50 rounded-xl border border-slate-800/60">
-                    <div class="text-xl font-black text-brand-accent mb-1">100%</div>
-                    <div class="text-xs text-slate-500 font-medium">Genuine Licenses</div>
-                </div>
-                <div class="p-4 bg-brand-dark/50 rounded-xl border border-slate-800/60">
-                    <div class="text-xl font-black text-brand-accent mb-1">24/7</div>
-                    <div class="text-xs text-slate-500 font-medium">WhatsApp Triage</div>
-                </div>
-                <div class="p-4 bg-brand-dark/50 rounded-xl border border-slate-800/60">
-                    <div class="text-xl font-black text-brand-accent mb-1">Zero</div>
-                    <div class="text-xs text-slate-500 font-medium">Checkout Friction</div>
-                </div>
-                <div class="p-4 bg-brand-dark/50 rounded-xl border border-slate-800/60">
-                    <div class="text-xl font-black text-brand-accent mb-1">Expert</div>
-                    <div class="text-xs text-slate-500 font-medium">Lab Technicians</div>
-                </div>
-            </div>
+    <!-- UPS / Power -->
+    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <i class="fa-solid fa-battery-full text-3xl text-yellow-400"></i>
+          <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Power</span>
         </div>
-    </section>
+        <h4 class="text-lg font-bold text-white mb-2">UPS & Power Solutions</h4>
+        <p class="text-slate-400 text-sm mb-4">Single-phase and three-phase UPS units, and power conditioners for sensitive gear.</p>
+      </div>
+      <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES%2C%20I%27d%20like%20a%20quote%20for%20UPS%20%26%20Power%20Solutions%20%28Quantity%3A%201%29" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block w-full text-center px-4 py-2 rounded-lg bg-brand-accent text-slate-950 font-semibold hover:from-cyan-500">
+        Get Price / Place Order
+      </a>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-xs md:text-sm text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-center md:text-left">
-                <div class="font-bold text-slate-300 text-base mb-1">WISSCANO TECHNOLOGIES</div>
-                <p class="max-w-md text-slate-500 text-xs">Premium Digital Storefront & ICT Hardware Systems Labs. All rights reserved.</p>
-            </div>
-            
-            <div class="flex flex-wrap justify-center gap-8 text-xs font-medium text-slate-400">
-                <div><i class="fa-regular fa-clock text-brand-accent mr-1"></i> Mon - Sat: 8:00 AM - 6:00 PM</div>
-                <div><i class="fa-solid fa-location-dot text-brand-accent mr-1"></i> Nairobi / Kitengela, Kenya</div>
-            </div>
-
-            <div class="text-center md:text-right">
-                <p>&copy; 2026 WISSCANO TECHNOLOGIES.</p>
-                <p class="text-[10px] text-slate-600 mt-1">Direct Checkout Secure Routing Framework via WhatsApp Business Protocol.</p>
-            </div>
+    <!-- Cables & Accessories -->
+    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all hover:shadow-xl group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <i class="fa-solid fa-plug text-3xl text-emerald-300"></i>
+          <span class="text-xs text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">Accessories</span>
         </div>
-    </footer>
+        <h4 class="text-lg font-bold text-white mb-2">Cables & Small Accessories</h4>
+        <p class="text-slate-400 text-sm mb-4">Ethernet cables, HDMI, adapters, racks, and small installation accessories.</p>
+      </div>
+      <a href="https://wa.me/254119834490?text=Hi%20WISSCANO%20TECHNOLOGIES%2C%20I%27d%20like%20a%20quote%20for%20Cables%20%26%20Small%20Accessories%20%28Quantity%3A%201%29" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block w-full text-center px-4 py-2 rounded-lg bg-brand-accent text-slate-950 font-semibold hover:from-cyan-500">
+        Get Price / Place Order
+      </a>
+    </div>
 
-</body>
-</html>
+  </div>
+</section>
